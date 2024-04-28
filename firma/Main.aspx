@@ -38,7 +38,7 @@
                     <NewButton ButtonType="Button" Text="Dodaj" RenderMode="Link"/>
                 </SettingsCommandButton>
             </dx:ASPxGridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Server=BARTEKLAP; Database=Praktykanci; Integrated Security=TRUE;"
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Server=[Nazwa serwera]; Database=[Nazwa bazy]; Integrated Security=TRUE;"
                 DeleteCommand="DELETE FROM [Praktykanci] WHERE [id] = @id"
                 InsertCommand="INSERT INTO [Praktykanci] ([firstName], [lastName], [desiredPosition], [dateSubmitted], [phoneNumber], [email]) VALUES (@firstName,@lastName,@desiredPosition,@dateSubmitted,@phoneNumber,@email)"
                 SelectCommand="SELECT [id], [firstName], [lastName], [desiredPosition], [dateSubmitted], [phoneNumber], [email] FROM [Praktykanci]"
